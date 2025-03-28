@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background: url('https://www.sciencenews.org/wp-content/uploads/2021/06/060321_jg_lab_feat-1028x579.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            color: lime;
+            background: black;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .search-box {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+            font-size: 18px;
+        }
+        .button {
+            padding: 15px;
+            font-size: 18px;
+            background: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+            margin: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .stats {
+            font-size: 18px;
+            margin-top: 20px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Quantum Library</h1>
+        
+        <p><strong>Welcome to our library! Feel free to explore and expand your knowledge.</strong></p>
+        <input type="text" class="search-box" id="doiInput" placeholder="Enter DOI or title">
+        <button class="button" onclick="searchEverywhere()" style="padding: 15px 60px; font-size: 18px; background: black; color: #39ff14; border: none; cursor: pointer; border-radius: 30px; margin: 5px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);">Search</button>
+        <div class="stats">
+    <p>Total Documents: <strong>306,571,849</strong></p>
+    <p>Max Users in a Day: <strong>1,478,320</strong></p>
+</div>
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+    <a href="https://x.com/LibraryQuantum" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" width="50">
+    </a>
+    <a href="https://t.me/QuantumLibraryDEX" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="50">
+    </a>
+</div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <button class="button" onclick="window.location.href='donation.html'" style="padding: 15px 60px; font-size: 18px; background: black; color: #39ff14; border: none; cursor: pointer; border-radius: 30px; margin: 5px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);">Donation</button>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/40px-Bitcoin.svg.png" alt="Bitcoin" width="40" height="40">
+                <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana" width="40" height="40">
+                <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum" width="40" height="40">
+                <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" alt="Binance" width="40" height="40">
+            </div>
+            </div>
+        <div style="margin-top: 20px; padding: 15px; background: red; color: white; font-weight: bold; border-radius: 5px;">
+            ⚠️ Due to the high number of searches, our servers are experiencing overload. To ensure smooth access, we need to upgrade our infrastructure. 
+            Please consider making a <a href='donation.html' style='color: yellow; text-decoration: underline;'>donation</a> to help us expand our server capacity!
+        </div>
+        <div style="margin-top: 20px; padding: 20px; background: #f4f4f4; border-radius: 10px; text-align: left;">
+            <h2>About Quantum Library</h2>
+            <p>Quantum Library is the fastest search engine for scientific publications and open-access research materials. Designed as an independent project, it aims to empower researchers, students, and professionals by providing seamless access to global academic knowledge, eliminating barriers to information, and fostering innovation in scientific discovery. Our mission is to provide unrestricted access to knowledge for everyone.</p>
+            
+            <h2>Database Overview</h2>
+            <p>Quantum Library currently provides access to over <strong>306,571,849</strong> scientific documents, freely available for search and retrieval.</p>
+            <p>Approximately 80% of the database consists of research articles published in journals, 6% are conference papers, and 5% are book chapters. The remaining content includes diverse academic materials.</p>
+            <p>Most research articles originate from medical and health sciences, followed by chemistry, biology, humanities, physics, and other fields.</p>
+            
+            <h2>Growth & Infrastructure</h2>
+            <p>The database has expanded significantly over the years, with the largest growth occurring between 2014 and 2024. We continue to integrate new academic resources daily.</p>
+            <p>Due to the increasing number of searches, our servers experience high loads. To sustain and expand our infrastructure, we rely on community support.</p>
+            <p>To ensure stable access and scalability, we urgently need funding for two new servers, each with a capacity of at least 120 terabytes. These upgrades will allow us to store and process a growing volume of scientific documents efficiently.</p>
+            
+            <h2>The Future of Quantum Library</h2>
+            <p>With your support, Quantum Library will evolve beyond a search engine into an integrated scientific ecosystem. Our next milestone is developing our own <strong>blockchain platform</strong> to ensure decentralized and tamper-proof storage of academic resources.</p>
+            <p>In addition, we are currently working on an <strong>AI model</strong> designed to assist with research tasks and streamline the search for scientific publications. The AI is in the training phase, and we have successfully reached <strong>67 billion parameters</strong>, marking a significant milestone in its development.</p>
+            <h3>Future Enhancements Will Include:</h3>
+            <ul>
+                <li><strong>Blockchain-secured publishing</strong> - Enabling researchers to timestamp and validate their work transparently.</li>
+                <li><strong>AI-powered recommendations</strong> - Providing highly personalized search results based on research interests.</li>
+                <li><strong>Open peer review system</strong> - Allowing a decentralized, community-driven evaluation of scientific work.</li>
+                <li><strong>Decentralized archiving</strong> - Ensuring long-term availability of knowledge through distributed storage solutions.</li>
+            </ul>
+            <p>Your contributions help us take the next step towards a more open, secure, and decentralized future for scientific knowledge.</p>
+            
+            
+            
+            
+            <p>If you'd like to support our mission, consider making a <a href='donation.html' style='color: purple; text-decoration: underline;'>donation</a> to help sustain and improve our infrastructure.</p>
+        </div>
+    </div>
+
+    <script>
+        function searchEverywhere() {
+            var input = document.getElementById("doiInput").value;
+            if (input.trim() === "") {
+                alert("Please enter a valid DOI or title.");
+                return;
+            }
+            
+            var sites = {
+                "Scopus": "https://www.scopus.com/search/form.uri?display=basic&query=",
+                "Web of Science": "https://www.webofscience.com/wos/woscc/basic-search?searchMode=BasicSearch&value="
+                "Sci-Hub": "https://sci-hub.se/",
+                "LibGen": "https://libgen.is/search.php?req=",
+                "Z-Library": "https://singlelogin.re/",
+                "arXiv": "https://arxiv.org/search/?query=",
+                "DOAJ": "https://www.doaj.org/search?ref=home&source=editor&q=",
+                "CORE": "https://core.ac.uk/search?q=",
+                "PubMed Central": "https://www.ncbi.nlm.nih.gov/pmc/?term="
+            };
+            
+            var win = window.open(sites["Sci-Hub"] + encodeURIComponent(input), '_blank');
+            setTimeout(() => { window.open(sites["LibGen"] + encodeURIComponent(input), '_blank'); }, 1000);
+            setTimeout(() => { window.open(sites["Z-Library"] + encodeURIComponent(input), '_blank'); }, 2000);
+            setTimeout(() => { window.open(sites["arXiv"] + encodeURIComponent(input), '_blank'); }, 3000);
+            setTimeout(() => { window.open(sites["DOAJ"] + encodeURIComponent(input), '_blank'); }, 4000);
+            setTimeout(() => { window.open(sites["CORE"] + encodeURIComponent(input), '_blank'); }, 5000);
+            setTimeout(() => { window.open(sites["PubMed Central"] + encodeURIComponent(input), '_blank'); }, 6000);
+            setTimeout(() => { window.open(sites["Scopus"] + encodeURIComponent(input), '_blank'); }, 7000);
+            setTimeout(() => { window.open(sites["Web of Science"] + encodeURIComponent(input), '_blank'); }, 8000);
+        }
+    </script>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="https://twitter.com/LibraryQuantum" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" width="50">
+    </a>
+    <p>Follow us on <a href="https://twitter.com/LibraryQuantum" target="_blank">Twitter</a> for updates!</p>
+</div>
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+    <a href="https://twitter.com/LibraryQuantum" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" width="50">
+    </a>
+    <a href="https://t.me/QuantumLibraryDEX" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="50">
+    </a>
+</div>
+</body>
+</html>
+
+
+оригинален индекс
